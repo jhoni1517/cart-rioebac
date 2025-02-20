@@ -133,9 +133,10 @@ int main() //Cógio fonte e principal para funcionalidade do programa
 	
 	printf("###Cartório do Jhoni###\n\n"); //início do menu
 	printf("Escolha a opção desejada do menu:\n\n");
-	printf("\t1 - Registrar nomes\n");
+	printf("\t1 - Registrar Nomes\n");
 	printf("\t2 - Consultar Nomes\n");
-	printf("\t3 - deletar Nomes\n\n\n");
+	printf("\t3 - Deletar Nomes\n");
+	printf("\t4 - Sair do Sistema\n\n\n");
 	printf("opção:"); //final do menu
 	
 	scanf("%d",&opcao); //armazenando as escolhas do usuário
@@ -155,6 +156,11 @@ int main() //Cógio fonte e principal para funcionalidade do programa
 	    case 3:
 	    deletar();
 		break;	
+		
+		case 4:
+		printf("Obrigado por utililar o sistema!");
+		return 0;
+		break;
 		
 		default:
 		system("pause");
